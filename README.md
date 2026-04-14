@@ -84,30 +84,6 @@ Every page links to `mukhrani-saperavi-reserve.html` using varied, keyword-rich 
 
 Navigation and footer links use `rel="nofollow"` to concentrate link equity through in-content links.
 
----
-
-## Deployment to GitHub Pages
-
-1. Create a new GitHub repository named `WineBridge`
-2. Push all files to the `main` branch
-3. Go to **Settings → Pages** → Source: `main` branch, root `/`
-4. Replace `YOUR_USERNAME` in `robots.txt` and `sitemap.xml` with your actual GitHub username
-5. Update canonical URLs in all HTML `<head>` sections
-
----
-
-## Adding Real Images
-
-All image placeholders are styled `<div>` elements with the class `img-placeholder`. To replace them:
-
-1. Add your image to the project (e.g., `images/saperavi-reserve.jpg`)
-2. Replace the `<div class="img-placeholder ...">` with:
-   ```html
-   <img src="images/saperavi-reserve.jpg"
-        alt="Château Mukhrani Saperavi Reserve premium Georgian red wine bottle"
-        loading="lazy">
-   ```
-3. The `alt` attribute text is already written for you in each placeholder's `aria-label`
 
 ---
 
