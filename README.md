@@ -5,8 +5,8 @@ Built with HTML5, Bootstrap 5.3.8, and vanilla JavaScript. Designed for GitHub P
 
 ## Live Site
 
-> Replace `YOUR_USERNAME` with your GitHub username after deployment.
-> `https://YOUR_USERNAME.github.io/WineBridge/`
+
+> `https://aleksandre02.github.io/WineBridge/`
 
 ---
 
@@ -59,32 +59,6 @@ WineBridge/
 | Headline font | Noto Serif |
 | Body font | Manrope |
 
----
 
-## SEO Strategy
-
-### Target Page
-`mukhrani-saperavi-reserve.html` — optimised for **"Georgian Saperavi Reserve wine"**
-
-### On-Page SEO
-- Unique `<title>` and `<meta name="description">` on every page
-- One `<h1>` per page with proper heading hierarchy
-- Semantic HTML5 (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- Descriptive, keyword-rich `alt` attributes on all images
-- JSON-LD structured data on the target page (Product schema)
-- Canonical URLs on every page
-- XML sitemap with priority weighting (target page: 0.95)
-
-### Internal Link Strategy
-Every page links to `mukhrani-saperavi-reserve.html` using varied, keyword-rich anchor text:
-- "Château Mukhrani Saperavi Reserve"
-- "premium Georgian Saperavi Reserve wine"
-- "explore our Saperavi Reserve"
-- "Georgia's premier Saperavi Reserve"
-
-Navigation and footer links use `rel="nofollow"` to concentrate link equity through in-content links.
-
-
----
 
 *Built with passion for Georgian wine culture.*
