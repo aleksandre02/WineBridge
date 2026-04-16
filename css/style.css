@@ -182,7 +182,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1543418219-44e7e3e4b72c?w=1600&q=80');
+  background-image: url('../images/hero-vineyard.png');
   background-size: cover;
   background-position: center;
   opacity: 0.45;
@@ -465,6 +465,33 @@ img { max-width: 100%; height: auto; display: block; }
 .winery-card .card-link:hover { color: var(--color-secondary); gap: 0.6rem; }
 .winery-card .card-link::after { content: '→'; }
 
+/* ── Image Wrappers (replaces placeholders when real photos are present) ── */
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bg-dark);
+  display: block;
+}
+
+.img-wrap--wine     { aspect-ratio: 3 / 4; }
+.img-wrap--winery   { aspect-ratio: 16 / 9; }
+.img-wrap--hero     { min-height: 420px; }
+.img-wrap--feature  { aspect-ratio: 4 / 3; }
+.img-wrap--bottle   { aspect-ratio: 2 / 3; }
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition);
+}
+
+.wine-card:hover .img-wrap img,
+.winery-card:hover .img-wrap img {
+  transform: scale(1.04);
+}
+
 /* ── Image Placeholders ─────────────────────────────────────── */
 .img-placeholder {
   background-color: var(--color-bg-dark);
@@ -533,7 +560,7 @@ img { max-width: 100%; height: auto; display: block; }
 .terroir-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1600&q=80');
+  background-image: url('../images/terroir-bg.png');
   background-size: cover;
   background-position: center;
   opacity: 0.22;

@@ -83,6 +83,57 @@
   });
 })();
 
+/* ── Flexible Image Extension Support ────────────────────── */
+/*
+ * Tries .jpg → .jpeg → .png → .webp for every <img> inside .img-wrap.
+ * Drop any of those formats into /images/ — no renaming needed.
+ */
+(function initFlexImages() {
+  const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
+
+  function stripExt(src) {
+    return src.replace(/\.[^.?#]+(\?.*)?$/, '');
+  }
+
+  function tryExtensions(img, base, index) {
+    if (index >= EXTS.length) return; // all failed — leave as-is (blank slot)
+    const candidate = base + '.' + EXTS[index];
+    const probe = new Image();
+    probe.onload  = () => { img.src = candidate; };
+    probe.onerror = () => tryExtensions(img, base, index + 1);
+    probe.src = candidate;
+  }
+
+  document.querySelectorAll('.img-wrap img').forEach((img) => {
+    const base = stripExt(img.src);
+    const probe = new Image();
+    // Only run the fallback loop if the default .jpg fails
+    probe.onerror = () => tryExtensions(img, base, 1); // start from .jpeg (index 1)
+    probe.src = img.src; // test the .jpg first
+  });
+
+  // CSS background images: hero-vineyard and terroir-bg
+  const BG_TARGETS = [
+    { selector: '.hero-bg',    base: 'images/hero-vineyard' },
+    { selector: '.terroir-bg', base: 'images/terroir-bg'    },
+  ];
+
+  BG_TARGETS.forEach(({ selector, base }) => {
+    const el = document.querySelector(selector);
+    if (!el) return;
+
+    function tryBgExt(index) {
+      if (index >= EXTS.length) return;
+      const url = base + '.' + EXTS[index];
+      const probe = new Image();
+      probe.onload  = () => { el.style.backgroundImage = `url('${url}')`; };
+      probe.onerror = () => tryBgExt(index + 1);
+      probe.src = url;
+    }
+    tryBgExt(0);
+  });
+})();
+
 /* ── Sticky Header Shadow ─────────────────────────────────── */
 (function initHeaderScroll() {
   const header = document.querySelector('.site-header');

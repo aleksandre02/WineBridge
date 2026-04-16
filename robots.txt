@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://YOUR_USERNAME.github.io/WineBridge/sitemap.xml
+Sitemap: https://aleksandre02.github.io/WineBridge/sitemap.xml

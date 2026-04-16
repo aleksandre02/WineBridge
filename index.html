@@ -6,9 +6,49 @@
   <title>WineBridge — Discover Georgian Wines | 8,000 Years of Winemaking Tradition</title>
   <meta name="description" content="WineBridge is your guide to Georgian wines — discover ancient qvevri traditions, Saperavi reds, Rkatsiteli whites, and the historic estates of Kakheti and beyond.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://YOUR_USERNAME.github.io/WineBridge/">
+  <link rel="canonical" href="https://aleksandre02.github.io/WineBridge/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) — WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WineBridge",
+    "url": "https://aleksandre02.github.io/WineBridge/",
+    "description": "WineBridge is a Georgian wine discovery platform connecting wine lovers with 8,000 years of winemaking tradition. Discover Saperavi reds, Rkatsiteli whites, qvevri-made wines, and the historic estates of Kakheti.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WineBridge",
+      "url": "https://aleksandre02.github.io/WineBridge/",
+      "description": "Georgian wine discovery platform celebrating the ancient winemaking traditions of the Caucasus.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Tbilisi, Georgia"
+      },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Georgian wine",
+        "Saperavi",
+        "Rkatsiteli",
+        "Qvevri winemaking",
+        "Kakheti wines",
+        "Château Mukhrani",
+        "Shumi Winery"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://aleksandre02.github.io/WineBridge/wines.html"
+      },
+      "query": "Georgian wine"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -71,9 +111,9 @@
             </p>
           </div>
           <div class="col-lg-6 fade-in-up delay-2">
-            <div class="img-placeholder img-placeholder--hero rounded-3" role="img" aria-label="Traditional Georgian qvevri clay vessels used in ancient winemaking">
-              <span class="img-placeholder-label">Georgian Qvevri — Ancient Clay Vessels</span>
-            </div>
+            <div class="img-wrap img-wrap--hero rounded-3">
+  <img src="images/georgia-wine-cellar.jpg" alt="Traditional Georgian qvevri clay vessels used in ancient winemaking" loading="lazy">
+</div>
           </div>
         </div>
       </div>
@@ -97,9 +137,9 @@
           <!-- Featured Wine 1: Saperavi Reserve — PRIMARY SEO TARGET -->
           <div class="col-md-6 col-lg-5 fade-in-up delay-1">
             <article class="wine-card">
-              <div class="img-placeholder img-placeholder--wine" role="img" aria-label="Château Mukhrani Saperavi Reserve premium Georgian red wine bottle">
-                <span class="img-placeholder-label">Saperavi Reserve</span>
-              </div>
+              <div class="img-wrap img-wrap--wine">
+  <img src="images/saperavi-reserve.jpg" alt="Château Mukhrani Saperavi Reserve premium Georgian red wine bottle" loading="lazy">
+</div>
               <div class="card-body">
                 <p class="card-subtitle">Château Mukhrani · Saperavi · 2020</p>
                 <h3 class="card-title">
@@ -121,9 +161,9 @@
           <!-- Featured Wine 2: Tsinandali -->
           <div class="col-md-6 col-lg-5 fade-in-up delay-2">
             <article class="wine-card">
-              <div class="img-placeholder img-placeholder--wine" role="img" aria-label="Shumi Tsinandali classic Georgian white wine bottle">
-                <span class="img-placeholder-label">Tsinandali White Wine</span>
-              </div>
+              <div class="img-wrap img-wrap--wine">
+  <img src="images/tsinandali.jpg" alt="Shumi Tsinandali classic Georgian white wine bottle" loading="lazy">
+</div>
               <div class="card-body">
                 <p class="card-subtitle">Shumi Winery · Rkatsiteli & Mtsvane · 2022</p>
                 <h3 class="card-title">
@@ -162,9 +202,9 @@
           <!-- Château Mukhrani -->
           <div class="col-md-6 fade-in-up delay-1">
             <article class="winery-card">
-              <div class="img-placeholder img-placeholder--winery" role="img" aria-label="Château Mukhrani historic palace and vineyard estate in Georgia">
-                <span class="img-placeholder-label">Château Mukhrani Estate</span>
-              </div>
+              <div class="img-wrap img-wrap--winery">
+  <img src="images/chateau-mukhrani-estate.jpg" alt="Château Mukhrani historic palace and vineyard estate in Georgia" loading="lazy">
+</div>
               <div class="card-body">
                 <p class="card-location">Mtskheta-Mtianeti, Georgia</p>
                 <h3 class="card-title">Château Mukhrani</h3>
@@ -182,9 +222,9 @@
           <!-- Shumi Winery -->
           <div class="col-md-6 fade-in-up delay-2">
             <article class="winery-card">
-              <div class="img-placeholder img-placeholder--winery" role="img" aria-label="Shumi Winery wine museum and vineyard in Kakheti, Georgia">
-                <span class="img-placeholder-label">Shumi Winery &amp; Museum</span>
-              </div>
+              <div class="img-wrap img-wrap--winery">
+  <img src="images/shumi-winery-estate.jpg" alt="Shumi Winery wine museum and vineyard in Kakheti, Georgia" loading="lazy">
+</div>
               <div class="card-body">
                 <p class="card-location">Tsinandali, Kakheti, Georgia</p>
                 <h3 class="card-title">Shumi Winery</h3>

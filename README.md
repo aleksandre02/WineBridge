@@ -5,7 +5,6 @@ Built with HTML5, Bootstrap 5.3.8, and vanilla JavaScript. Designed for GitHub P
 
 ## Live Site
 
-
 > `https://aleksandre02.github.io/WineBridge/`
 
 ---
@@ -24,10 +23,9 @@ WineBridge/
 ├── shumi-iberiuli-saperavi.html      # Iberiuli Saperavi wine detail
 ├── shumi-tsinandali.html             # Tsinandali wine detail
 ├── contact.html                      # Contact page
-├── css/
-│   └── style.css                     # Design system + custom styles
-├── js/
-│   └── main.js                       # Scroll animations, smooth scroll, forms
+├── css/style.css                     # Design system + custom styles
+├── js/main.js                        # Scroll animations, smooth scroll, forms
+├── images/                           # Photo assets
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
@@ -47,18 +45,34 @@ WineBridge/
 
 ---
 
-## Design System
+## SEO Strategy
 
-| Token | Value |
-|-------|-------|
-| Primary (Burgundy) | `#722F37` |
-| Secondary (Warm Brown) | `#8B6914` |
-| Tertiary (Soft Gold) | `#C9A96E` |
-| Background (Cream) | `#F5F0EB` |
-| Text (Charcoal) | `#2C2C2C` |
-| Headline font | Noto Serif |
-| Body font | Manrope |
+### Target Page
+`mukhrani-saperavi-reserve.html` — optimised for **"Georgian Saperavi Reserve wine"**
 
+Every page links to the target using varied keyword-rich anchor text.
+Navigation and footer links use `rel="nofollow"` to concentrate PageRank through in-content links.
 
+---
+
+## Schema.org Markup
+
+| Page | Schema Type | Rich Snippet |
+|------|------------|-------------|
+| `mukhrani-saperavi-reserve.html` | Product + AggregateRating | Star ratings |
+| `chateau-mukhrani.html` | Winery (LocalBusiness) | Business panel |
+| `contact.html` | FAQPage | Expandable Q&A |
+| `shumi-winery.html` | TouristAttraction + Museum | Attraction card |
+| `index.html` | WebSite + Organization | Sitelinks |
+
+---
+
+## Deployment (GitHub Pages)
+
+Repo → **Settings** → **Pages** → Source: `main` / `/(root)` → **Save**
+
+Site: `https://aleksandre02.github.io/WineBridge/`
+
+---
 
 *Built with passion for Georgian wine culture.*
