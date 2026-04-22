@@ -65,14 +65,4 @@ Navigation and footer links use `rel="nofollow"` to concentrate PageRank through
 | `shumi-winery.html` | TouristAttraction + Museum | Attraction card |
 | `index.html` | WebSite + Organization | Sitelinks |
 
----
 
-## Deployment (GitHub Pages)
-
-Repo → **Settings** → **Pages** → Source: `main` / `/(root)` → **Save**
-
-Site: `https://aleksandre02.github.io/WineBridge/`
-
----
-
-*Built with passion for Georgian wine culture.*
