@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Wine Catalog -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/wines.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Winery Catalog -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/wineries.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- SEO TARGET PAGE — Highest priority wine page -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/mukhrani-saperavi-reserve.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- Château Mukhrani Winery -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/chateau-mukhrani.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Shumi Winery -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/shumi-winery.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -52,7 +52,7 @@
   <!-- Château Mukhrani Rkatsiteli -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/mukhrani-rkatsiteli.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,7 +60,7 @@
   <!-- Shumi Iberiuli Saperavi -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/shumi-iberiuli-saperavi.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,7 +68,7 @@
   <!-- Shumi Tsinandali -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/shumi-tsinandali.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -76,7 +76,7 @@
   <!-- Contact -->
   <url>
     <loc>https://aleksandre02.github.io/WineBridge/contact.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
