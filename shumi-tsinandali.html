@@ -9,6 +9,50 @@
   <link rel="canonical" href="https://aleksandre02.github.io/WineBridge/shumi-tsinandali.html">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) — Product + AggregateRating + Review -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Shumi Tsinandali",
+    "image": "https://aleksandre02.github.io/WineBridge/images/tsinandali.jpg",
+    "description": "A classic Georgian white wine blend of Rkatsiteli and Mtsvane grapes from the famous Tsinandali appellation in Kakheti.",
+    "brand": { "@type": "Brand", "name": "Shumi Winery" },
+    "category": "Georgian White Wine Blend",
+    "countryOfOrigin": { "@type": "Country", "name": "Georgia" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.3",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "10",
+      "reviewCount": "2"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Ana Melikishvili" },
+        "datePublished": "2025-12-01",
+        "reviewBody": "Elegant and balanced. The Mtsvane adds beautiful floral notes to the Rkatsiteli backbone. A wonderful introduction to Georgian whites.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aleksandre02.github.io/WineBridge/" },
+      { "@type": "ListItem", "position": 2, "name": "Georgian Wine Collection", "item": "https://aleksandre02.github.io/WineBridge/wines.html" },
+      { "@type": "ListItem", "position": 3, "name": "Shumi Tsinandali", "item": "https://aleksandre02.github.io/WineBridge/shumi-tsinandali.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
 

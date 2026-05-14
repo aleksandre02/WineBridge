@@ -11,43 +11,58 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Structured Data (JSON-LD) — WebSite + Organization -->
+  <!-- Structured Data (JSON-LD) — Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WineBridge",
+    "url": "https://aleksandre02.github.io/WineBridge/",
+    "logo": "https://aleksandre02.github.io/WineBridge/images/logo.png",
+    "description": "Georgian wine discovery platform celebrating the ancient winemaking traditions of the Caucasus — connecting wine lovers with 8,000 years of heritage.",
+    "foundingDate": "2024",
+    "areaServed": "Worldwide",
+    "knowsAbout": [
+      "Georgian wine",
+      "Saperavi",
+      "Rkatsiteli",
+      "Qvevri winemaking",
+      "Kakheti wines",
+      "Château Mukhrani",
+      "Shumi Winery"
+    ],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — WebSite + SearchAction (Sitelinks search) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "WineBridge",
     "url": "https://aleksandre02.github.io/WineBridge/",
-    "description": "WineBridge is a Georgian wine discovery platform connecting wine lovers with 8,000 years of winemaking tradition. Discover Saperavi reds, Rkatsiteli whites, qvevri-made wines, and the historic estates of Kakheti.",
+    "description": "WineBridge is a Georgian wine discovery platform connecting wine lovers with 8,000 years of winemaking tradition.",
     "inLanguage": "en",
-    "publisher": {
-      "@type": "Organization",
-      "name": "WineBridge",
-      "url": "https://aleksandre02.github.io/WineBridge/",
-      "description": "Georgian wine discovery platform celebrating the ancient winemaking traditions of the Caucasus.",
-      "foundingLocation": {
-        "@type": "Place",
-        "name": "Tbilisi, Georgia"
-      },
-      "areaServed": "Worldwide",
-      "knowsAbout": [
-        "Georgian wine",
-        "Saperavi",
-        "Rkatsiteli",
-        "Qvevri winemaking",
-        "Kakheti wines",
-        "Château Mukhrani",
-        "Shumi Winery"
-      ]
-    },
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://aleksandre02.github.io/WineBridge/wines.html"
+        "urlTemplate": "https://aleksandre02.github.io/WineBridge/wines.html?q={search_term_string}"
       },
-      "query": "Georgian wine"
+      "query-input": "required name=search_term_string"
     }
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aleksandre02.github.io/WineBridge/" }
+    ]
   }
   </script>
 </head>

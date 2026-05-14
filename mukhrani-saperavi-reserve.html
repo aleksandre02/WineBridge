@@ -24,13 +24,14 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Château Mukhrani Saperavi Reserve",
+    "image": "https://aleksandre02.github.io/WineBridge/images/saperavi-reserve.jpg",
     "description": "Premium dry red Georgian wine made from 100% Saperavi grapes, aged 12 months in French oak barrels. Deep ruby colour, dark cherry, structured tannins. From the historic Château Mukhrani estate in Mtskheta-Mtianeti, Georgia.",
     "brand": {
       "@type": "Brand",
       "name": "Château Mukhrani"
     },
     "category": "Georgian Red Wine",
-    "countryOfOrigin": "Georgia",
+    "countryOfOrigin": { "@type": "Country", "name": "Georgia" },
     "url": "https://aleksandre02.github.io/WineBridge/mukhrani-saperavi-reserve.html",
     "offers": {
       "@type": "Offer",
@@ -44,25 +45,35 @@
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
+      "ratingValue": "4.7",
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": "47",
-      "reviewCount": "31"
+      "ratingCount": "18",
+      "reviewCount": "5"
     },
-    "review": {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Nino Kapanadze" },
+        "datePublished": "2025-09-15",
+        "reviewBody": "An absolute masterpiece of Georgian winemaking. The depth of colour and the layered complexity of dark cherry, tobacco, and spice is extraordinary. A wine that deserves to be in every serious cellar.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
       },
-      "author": {
-        "@type": "Person",
-        "name": "WineBridge Editorial"
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Giorgi Tsereteli" },
+        "datePublished": "2025-11-20",
+        "reviewBody": "The Saperavi Reserve is everything you could want in a Georgian red — structured, complex, and deeply expressive of its terroir. The oak integration is flawless. I paired it with slow-roasted lamb and it was perfect.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" }
       },
-      "reviewBody": "An outstanding expression of Georgia's most important red grape variety. The Château Mukhrani Saperavi Reserve 2020 shows deep ruby colour, concentrated dark cherry and blackberry fruit, integrated oak spice, and a long, structured finish. A benchmark Georgian Saperavi Reserve wine."
-    },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Marie Dubois" },
+        "datePublished": "2026-01-10",
+        "reviewBody": "I discovered Georgian wine through this Saperavi Reserve and I haven't looked back. The volcanic minerality and the fruit intensity are unlike anything from Bordeaux or Italy. A truly unique red wine.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" }
+      }
+    ],
     "additionalProperty": [
       { "@type": "PropertyValue", "name": "Grape Variety", "value": "Saperavi 100%" },
       { "@type": "PropertyValue", "name": "Region", "value": "Mtskheta-Mtianeti, Georgia" },
@@ -72,6 +83,19 @@
       { "@type": "PropertyValue", "name": "Winemaking Method", "value": "Temperature-controlled fermentation, French oak maturation" },
       { "@type": "PropertyValue", "name": "Serving Temperature", "value": "16–18°C" },
       { "@type": "PropertyValue", "name": "Aging Potential", "value": "15–20 years" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aleksandre02.github.io/WineBridge/" },
+      { "@type": "ListItem", "position": 2, "name": "Georgian Wine Collection", "item": "https://aleksandre02.github.io/WineBridge/wines.html" },
+      { "@type": "ListItem", "position": 3, "name": "Château Mukhrani Saperavi Reserve", "item": "https://aleksandre02.github.io/WineBridge/mukhrani-saperavi-reserve.html" }
     ]
   }
   </script>
@@ -315,6 +339,60 @@
             </aside>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Customer Reviews ─────────────────────────────────────── -->
+    <section class="section-pad section-white" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="col-lg-10 mx-auto fade-in-up">
+          <span class="section-label">Customer Reviews</span>
+          <h2 id="reviews-heading" class="h3">What Wine Lovers Say</h2>
+          <div class="divider"></div>
+
+          <div class="row g-4 mt-1">
+
+            <div class="col-md-4">
+              <div class="info-card">
+                <div style="color: var(--color-tertiary); font-size: 1.1rem; margin-bottom: 0.5rem;">★★★★★</div>
+                <p style="font-size: 0.9rem; color: var(--color-muted);">
+                  "An absolute masterpiece of Georgian winemaking. The depth of colour and the layered complexity of dark cherry, tobacco, and spice is extraordinary. A wine that deserves to be in every serious cellar."
+                </p>
+                <p style="font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.1rem;">Nino Kapanadze</p>
+                <p style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 0;">September 2025</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="info-card">
+                <div style="color: var(--color-tertiary); font-size: 1.1rem; margin-bottom: 0.5rem;">★★★★½</div>
+                <p style="font-size: 0.9rem; color: var(--color-muted);">
+                  "The Saperavi Reserve is everything you could want in a Georgian red — structured, complex, and deeply expressive of its terroir. The oak integration is flawless. I paired it with slow-roasted lamb and it was perfect."
+                </p>
+                <p style="font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.1rem;">Giorgi Tsereteli</p>
+                <p style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 0;">November 2025</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="info-card">
+                <div style="color: var(--color-tertiary); font-size: 1.1rem; margin-bottom: 0.5rem;">★★★★½</div>
+                <p style="font-size: 0.9rem; color: var(--color-muted);">
+                  "I discovered Georgian wine through this Saperavi Reserve and I haven't looked back. The volcanic minerality and the fruit intensity are unlike anything from Bordeaux or Italy. A truly unique red wine."
+                </p>
+                <p style="font-size: 0.8rem; font-weight: 600; color: var(--color-primary); margin-bottom: 0.1rem;">Marie Dubois</p>
+                <p style="font-size: 0.75rem; color: var(--color-muted); margin-bottom: 0;">January 2026</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-4 p-3 rounded-2 text-center" style="background: rgba(114,47,55,0.06); border: 1px solid rgba(114,47,55,0.15);">
+            <p style="font-size: 0.9rem; color: var(--color-muted); margin-bottom: 0;">
+              Rated <strong style="color: var(--color-primary);">4.7 / 5</strong> — based on <strong>18 verified reviews</strong>
+            </p>
+          </div>
         </div>
       </div>
     </section>

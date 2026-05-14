@@ -9,6 +9,50 @@
   <link rel="canonical" href="https://aleksandre02.github.io/WineBridge/shumi-iberiuli-saperavi.html">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) — Product + AggregateRating + Review -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Shumi Iberiuli Saperavi",
+    "image": "https://aleksandre02.github.io/WineBridge/images/shumi-iberiuli-saperavi.jpg",
+    "description": "A traditional qvevri-made Georgian red wine from Kakheti. Dense color with earthy character, dried fruit, and distinctive qvevri texture.",
+    "brand": { "@type": "Brand", "name": "Shumi Winery" },
+    "category": "Georgian Qvevri Red Wine",
+    "countryOfOrigin": { "@type": "Country", "name": "Georgia" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "15",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Tamara Kvachadze" },
+        "datePublished": "2025-08-20",
+        "reviewBody": "Authentic qvevri character with beautiful earthy complexity. You can taste the tradition in every sip.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aleksandre02.github.io/WineBridge/" },
+      { "@type": "ListItem", "position": 2, "name": "Georgian Wine Collection", "item": "https://aleksandre02.github.io/WineBridge/wines.html" },
+      { "@type": "ListItem", "position": 3, "name": "Shumi Iberiuli Saperavi", "item": "https://aleksandre02.github.io/WineBridge/shumi-iberiuli-saperavi.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
 

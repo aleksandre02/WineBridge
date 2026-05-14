@@ -176,23 +176,43 @@
 
           <!-- Contact Info Box -->
           <div class="col-lg-5 fade-in-up delay-2">
-            <div class="contact-info-box">
+            <!-- RDFa: Organization structured data -->
+            <div class="contact-info-box" vocab="https://schema.org/" typeof="Organization">
               <h3>Contact Information</h3>
+              <meta property="name" content="WineBridge">
+              <p property="description" style="color:rgba(255,255,255,0.6); font-size:0.875rem; margin-bottom:1.5rem;">
+                Georgian wine discovery — connecting wine lovers with 8,000 years of Caucasian winemaking heritage.
+              </p>
 
-              <div class="contact-info-item">
-                <div class="contact-info-item-icon" aria-hidden="true">✉</div>
-                <div>
-                  <p class="mb-0" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5);">Email</p>
-                  <p class="mb-0" style="color:var(--color-white); font-weight:600;">hello@winebridge.ge</p>
+              <div property="contactPoint" typeof="ContactPoint">
+                <meta property="contactType" content="customer service">
+                <meta property="availableLanguage" content="English">
+
+                <div class="contact-info-item">
+                  <div class="contact-info-item-icon" aria-hidden="true">✉</div>
+                  <div>
+                    <p class="mb-0" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5);">Email</p>
+                    <p class="mb-0" style="color:var(--color-white); font-weight:600;"><span property="email">hello@winebridge.ge</span></p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-info-item-icon" aria-hidden="true">📞</div>
+                  <div>
+                    <p class="mb-0" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5);">Phone</p>
+                    <p class="mb-0" style="color:var(--color-white); font-weight:600;"><span property="telephone">+995 32 200 0000</span></p>
+                  </div>
                 </div>
               </div>
 
-              <div class="contact-info-item">
-                <div class="contact-info-item-icon" aria-hidden="true">📍</div>
-                <div>
-                  <p class="mb-0" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5);">Location</p>
-                  <p class="mb-0" style="color:var(--color-white); font-weight:600;">Tbilisi, Georgia</p>
-                  <p class="mb-0" style="color:rgba(255,255,255,0.6); font-size:0.85rem;">Kakheti operations, Eastern Georgia</p>
+              <div property="address" typeof="PostalAddress">
+                <div class="contact-info-item">
+                  <div class="contact-info-item-icon" aria-hidden="true">📍</div>
+                  <div>
+                    <p class="mb-0" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5);">Location</p>
+                    <p class="mb-0" style="color:var(--color-white); font-weight:600;"><span property="addressLocality">Tbilisi</span>, <span property="addressCountry">Georgia</span></p>
+                    <p class="mb-0" style="color:rgba(255,255,255,0.6); font-size:0.85rem;">Kakheti operations, Eastern Georgia</p>
+                  </div>
                 </div>
               </div>
 

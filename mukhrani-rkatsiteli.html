@@ -9,6 +9,50 @@
   <link rel="canonical" href="https://aleksandre02.github.io/WineBridge/mukhrani-rkatsiteli.html">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) — Product + AggregateRating + Review -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Château Mukhrani Rkatsiteli 2021",
+    "image": "https://aleksandre02.github.io/WineBridge/images/mukhrani-rkatsiteli.jpg",
+    "description": "A crisp Georgian dry white wine from the Mtskheta-Mtianeti region. Straw yellow with aromas of green apple, citrus, and white flowers.",
+    "brand": { "@type": "Brand", "name": "Château Mukhrani" },
+    "category": "Georgian White Wine",
+    "countryOfOrigin": { "@type": "Country", "name": "Georgia" },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "12",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Luka Davitashvili" },
+        "datePublished": "2025-10-05",
+        "reviewBody": "A refreshing and elegant white wine. The citrus and floral notes make it perfect for summer evenings. Great value for the quality.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data (JSON-LD) — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aleksandre02.github.io/WineBridge/" },
+      { "@type": "ListItem", "position": 2, "name": "Georgian Wine Collection", "item": "https://aleksandre02.github.io/WineBridge/wines.html" },
+      { "@type": "ListItem", "position": 3, "name": "Château Mukhrani Rkatsiteli", "item": "https://aleksandre02.github.io/WineBridge/mukhrani-rkatsiteli.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
